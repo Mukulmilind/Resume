@@ -49,7 +49,7 @@ p span:nth-child(1), p span:nth-child(7), p span:nth-child(14) {
   position: relative;
   display: inline-block;
   animation-delay: 5s;
-  animation: lower 10s linear 1;
+  animation: lower 5s linear 1;
 }
 
 @keyframes lower {
@@ -73,16 +73,16 @@ p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover
 
 @keyframes animate {
   0% {
-    transform: translateY(0px) rotateY(0deg);
+    transform: translateY(0px);
     color: white;
   }
   50% {
-    transform: translateY(-25px) rotateZ(180deg);
+    transform: translateY(-25px);
     color: #FF9900;
   }
   100% {
     color: white;
-    transform: translateY(0px) rotateZ(360deg);
+    transform: translateY(0px);
   }
 }
 
