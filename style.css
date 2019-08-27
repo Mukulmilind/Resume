@@ -24,13 +24,13 @@ body {
 /* Digital Clock */
 #clock {
   /* color: rgb(30, 255, 0); */
-  color: grey;
-  font-size: 60px;
-  /* font-weight: lighter; */
+  color: #1de9b6;
+  font-size: 3.5em;
+  font-weight: lighter;
   text-align: center;
   padding-top: 30px;
   margin-top: 50px;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #808080;
 }
 
 /* Typewriter effect */
@@ -108,7 +108,7 @@ p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover
 }
 .button {
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   text-align: center;
   font-weight: lighter;
