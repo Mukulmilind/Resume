@@ -32,27 +32,6 @@ body {
     blink-caret 1s step-end infinite;
 }
 
-/* Jumping Effect */
-p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover {
-  position: relative;
-  display: inline-block;
-  animation-delay: 5s;
-  color: #FF9900;
-  animation: animate 1s alternate 1;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-25px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -63,6 +42,48 @@ p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #FF9900 }
+}
+
+/* Glowing efect */
+p span:nth-child(1), p span:nth-child(7), p span:nth-child(14) {
+  position: relative;
+  display: inline-block;
+  animation-delay: 5s;
+  animation: lower 10s linear 1;
+}
+
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:1; 
+    color: #FF9900;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4;    
+  }
+}
+
+/* Jumping Effect */
+p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover {
+  position: relative;
+  display: inline-block;
+  animation-delay: 5s;
+  color: #FF9900;
+  animation: animate 0.75s alternate 1 ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotateY(0deg);
+    color: white;
+  }
+  50% {
+    transform: translateY(-25px) rotateZ(180deg);
+    color: #FF9900;
+  }
+  100% {
+    color: white;
+    transform: translateY(0px) rotateZ(360deg);
+  }
 }
 
 /* Button style */
@@ -104,8 +125,13 @@ button.button:active {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.3s;
-  -webkit-transition: all 0.3s;
+  transform: translateX(50px);
+  transition: 
+    opacity 0.1s 0.5s,
+    transform 0.4s, 0.5s;
+  -webkit-transition: 
+    opacity 0.1s 0.5s,
+    transform 0.4s, 0.5s;
 }
 
 .button:hover span {
@@ -115,6 +141,7 @@ button.button:active {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+  transform: translateX(0);
 }
 
 .button:hover {
