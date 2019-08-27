@@ -3,6 +3,7 @@
         <title>Mukul Resume</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/png" href="./assets/letterMorange.png">
+
     </head>
 
     <body>
@@ -36,8 +37,32 @@
             <div class="clickHere">
                 <button class="button"><span>Click Me</span></button>
             </div>
-            
+
+            <!-- clock -->
+            <div id="clock" onload="currentTime()"></div>
+
         </div>
+
+        <script>
+            function currentTime() {
+            /* creating object of Date class */
+            var date = new Date(); 
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            hour = updateTime(hour);
+            min = updateTime(min);
+            sec = updateTime(sec);
+            /* adding time to the div with id="clockl" */
+            document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; 
+                var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+            }
+            function updateTime(k) {
+                if (k < 10) { return "0" + k; }
+                else { return k; }   
+            }
+            currentTime(); /* calling currentTime() function to initiate the process */
+        </script>
 
     </body>
 </html>
