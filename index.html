@@ -49,7 +49,20 @@
 
         </div>
 
-        <script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                setTimeout(function(){
+                    $('.social').fadeIn(2000);
+                }, 2500);
+            });
+            $('.social').ready(function () {
+                setTimeout(function(){
+                    $('#clock').fadeIn(2000);
+                }, 5000);
+            });
+
+            
             function currentTime() {
             /* creating object of Date class */
             var date = new Date(); 

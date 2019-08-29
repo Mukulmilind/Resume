@@ -23,7 +23,7 @@ body {
 
 /* Digital Clock */
 #clock {
-  /* color: rgb(30, 255, 0); */
+  display: none;
   color: #FF9900;
   font-size: 3.5em;
   /* font-weight: lighter; */
@@ -45,6 +45,9 @@ body {
 }
 
 /* Social Media Links */
+div.social {
+  display: none;
+}
 div.social a img {
   max-width: 50px;
   max-height: 50px;
@@ -54,16 +57,21 @@ div.social a img {
   text-decoration: none;
   margin: 40px 25px 25px 25px;
   opacity: 0.8;
+}
 
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 /* Rubberband effect */
 div.social a img:hover {
   opacity: 1;
   animation-name: tada;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 }
 
 @-webkit-keyframes tada {
@@ -275,4 +283,4 @@ button.button:active {
 }
 
 /* To remove the blue border on click */
-button:focus {outline:0;}
+button:focus { outline:0; }
