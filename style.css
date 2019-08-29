@@ -4,7 +4,7 @@ body {
   justify-content: center;
   display: flex;
   overflow: hidden;
-  background-image: linear-gradient(rgba(53, 53, 53, 0.6), rgba(0, 0, 0, 0.85)) ,url("./assets/mukulHeadShot.jpg");
+  background-image: linear-gradient(rgba(53, 53, 53, 0.65), rgba(0, 0, 0, 0.85)) ,url("./assets/mukulHeadShot.jpg");
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -31,6 +31,17 @@ body {
   padding-top: 30px;
   margin-top: 10px;
   border-top: 1px solid #808080;
+}
+
+/* Rubber Band Animation */
+#clock:hover {
+  animation-name: rubberBand;
+  -webkit-animation-name: rubberBand;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 /* Social Media Links */
@@ -163,7 +174,7 @@ p span:nth-child(1), p span:nth-child(7), p span:nth-child(14) {
   }
 }
 
-/* RubberBand Effect on hover */
+/* Rubber Band Effect on hover */
 p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover {
   position: relative;
   display: inline-block;
