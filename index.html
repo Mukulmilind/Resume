@@ -1,36 +1,36 @@
 <html>
     <head>
         <title>Mukul Resume</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="icon" type="image/png" href="./assets/letterMorange.png">
 
     </head>
 
     <body>
-       
+        
         <div class="container">
+            <p class="hello">" Hello There, I am</p>
             <div class="typewriter">
                 <p>
                     <span>M</span>
-                    <span>u</span>
-                    <span>k</span>
-                    <span>u</span>
-                    <span>l</span>
+                    <span>U</span>
+                    <span>K</span>
+                    <span>U</span>
+                    <span>L</span>
                     <span>&nbsp;</span>
                     <span>M</span>
-                    <span>i</span>
-                    <span>l</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>d</span>
+                    <span>I</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>D</span>
                     <span>&nbsp;</span>
                     <span>M</span>
-                    <span>i</span>
-                    <span>s</span>
-                    <span>h</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>.</span>
+                    <span>I</span>
+                    <span>S</span>
+                    <span>H</span>
+                    <span>R</span>
+                    <span>A</span>
                     <span>&nbsp;</span>
                 </p>
             </div>
@@ -45,23 +45,14 @@
             </div>
 
             <!-- clock -->
-            <div id="clock" onload="currentTime()"></div>
+            <div class="hoverClock">
+                <div id="clock" onload="currentTime()"></div>
+            </div>
 
         </div>
 
-        <script type="text/javascript" src="./jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                setTimeout(function(){
-                    $('.social').fadeIn(2000);
-                }, 2500);
-            });
-            $('.social').ready(function () {
-                setTimeout(function(){
-                    $('#clock').fadeIn(2000);
-                }, 5000);
-            });
-
             
             function currentTime() {
             /* creating object of Date class */
