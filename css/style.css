@@ -4,7 +4,8 @@ body {
   justify-content: center;
   display: flex;
   overflow: hidden;
-  background-image: linear-gradient(rgba(53, 53, 53, 0.65), rgba(0, 0, 0, 0.85)) ,url("../assets/mukulHeadShot-min.jpg");
+  background-image: linear-gradient(rgba(53, 53, 53, 0.65), rgba(0, 0, 0, 0.85)) ,url("../assets/mukul.jpg");
+  /* background-image: linear-gradient(rgba(53, 53, 53, 0.65), rgba(0, 0, 0, 0.85)) ,url("../assets/mukulHeadShot-min.jpg"); */
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -17,7 +18,7 @@ body {
 
 /* Main Container having all page content */
 .container {  
-  top:35%;
+  top:40%;
   position: relative;
   text-align: center;
 }
@@ -299,10 +300,8 @@ p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover
 .slidingVertical{
   margin: 0;
   padding: 0;
-  text-align: left;
   font-size: 1.3em;
   font-weight: lighter;
-
 }
 .slidingVertical .intro{
 	animation: topToBottom 9s ease-out infinite 0s;
@@ -380,7 +379,7 @@ p span:nth-child(1):hover, p span:nth-child(7):hover, p span:nth-child(14):hover
 
 /* Button style */
 .clickHere {
-  margin-top: 30px;
+  margin-top: 20px;
   position: relative;
 }
 
